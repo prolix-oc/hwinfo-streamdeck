@@ -11,7 +11,6 @@ plugin: proto
 	$(GOBUILD) -o $(SDPLUGINDIR)/hwinfo.exe ./cmd/hwinfo_streamdeck_plugin
 	$(GOBUILD) -o $(SDPLUGINDIR)/hwinfo-plugin.exe ./cmd/hwinfo-plugin
 	cp ../go-hwinfo-hwservice-plugin/bin/hwinfo-plugin.exe $(SDPLUGINDIR)/hwinfo-plugin.exe
-	-@install-plugin.bat
 
 proto: $(PROTOPB)
 

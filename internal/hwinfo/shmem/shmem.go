@@ -65,7 +65,7 @@ func ReadBytes() ([]byte, error) {
 }
 
 func openFileMapping() (C.HANDLE, error) {
-	lpName := C.CString("Global\\HWiNFO_SENS_SM2_REMOTE_0")
+	lpName := C.CString(C.HWiNFO_SENSORS_MAP_FILE_NAME2_REMOTE + "0")
 	defer C.free(unsafe.Pointer(lpName))
 
 	hnd := C.OpenFileMapping(syscall.FILE_MAP_READ, 0, lpName)

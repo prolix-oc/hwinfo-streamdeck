@@ -19,7 +19,7 @@ import (
 // SharedMemory provides access to the HWiNFO shared memory
 type SharedMemory struct {
 	data  []byte
-	shmem C.PHWiNFO_SENSORS_SHARED_MEM2
+	shmem C.HWiNFO_SENSORS_MAP_FILE_NAME2
 }
 
 // ReadSharedMem reads data from HWiNFO shared memory
