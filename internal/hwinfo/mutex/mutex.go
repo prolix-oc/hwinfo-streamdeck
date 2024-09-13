@@ -10,7 +10,7 @@ import (
 	"sync"
 	"unsafe"
 
-	"github.com/shayne/hwinfo-streamdeck/internal/hwinfo/util"
+	"github.com/prolix-oc/hwinfo-streamdeck/internal/hwinfo/util"
 )
 
 var ghnd C.HANDLE

@@ -6,8 +6,8 @@ import (
 	"log"
 
 	"github.com/gorilla/websocket"
-	"github.com/shayne/hwinfo-streamdeck/pkg/graph"
-	"github.com/shayne/hwinfo-streamdeck/pkg/streamdeck"
+	"github.com/prolix-oc/hwinfo-streamdeck/pkg/graph"
+	"github.com/prolix-oc/hwinfo-streamdeck/pkg/streamdeck"
 )
 
 const (

@@ -1,3 +1,3 @@
 @echo off
-del build\com.exension.hwinfo.streamDeckPlugin
-DistributionTool.exe com.exension.hwinfo.sdPlugin build
+del build\com.prolix.hwinfo.streamDeckPlugin
+DistributionTool.exe -i com.prolix.hwinfo.sdPlugin -o build --build 

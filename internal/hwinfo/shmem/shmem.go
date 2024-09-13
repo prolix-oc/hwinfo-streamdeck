@@ -12,8 +12,8 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/shayne/hwinfo-streamdeck/internal/hwinfo/mutex"
-	"github.com/shayne/hwinfo-streamdeck/internal/hwinfo/util"
+	"github.com/prolix-oc/hwinfo-streamdeck/internal/hwinfo/mutex"
+	"github.com/prolix-oc/hwinfo-streamdeck/internal/hwinfo/util"
 	"golang.org/x/sys/windows"
 )
 
@@ -65,7 +65,7 @@ func ReadBytes() ([]byte, error) {
 }
 
 func openFileMapping() (C.HANDLE, error) {
-	lpName := C.CString(C.HWiNFO_SENSORS_MAP_FILE_NAME2)
+	lpName := C.CString("Global\\HWiNFO_SENS_SM2_REMOTE_0")
 	defer C.free(unsafe.Pointer(lpName))
 
 	hnd := C.OpenFileMapping(syscall.FILE_MAP_READ, 0, lpName)

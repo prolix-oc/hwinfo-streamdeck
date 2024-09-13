@@ -8,7 +8,7 @@ import "C"
 import (
 	"unsafe"
 
-	"github.com/shayne/hwinfo-streamdeck/internal/hwinfo/util"
+	"github.com/prolix-oc/hwinfo-streamdeck/internal/hwinfo/util"
 )
 
 // ReadingType enum of value/unit type for reading

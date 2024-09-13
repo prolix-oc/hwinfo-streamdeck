@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"unsafe"
 
-	"github.com/shayne/hwinfo-streamdeck/internal/hwinfo/util"
+	"github.com/prolix-oc/hwinfo-streamdeck/internal/hwinfo/util"
 )
 
 // Sensor element (e.g. motherboard, cpu, gpu...)

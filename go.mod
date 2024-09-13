@@ -1,4 +1,4 @@
-module github.com/shayne/hwinfo-streamdeck
+module github.com/prolix-oc/hwinfo-streamdeck
 
 go 1.19
 

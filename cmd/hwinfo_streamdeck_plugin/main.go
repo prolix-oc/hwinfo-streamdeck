@@ -10,7 +10,7 @@ import (
 	"os"
 	"path/filepath"
 
-	plugin "github.com/shayne/hwinfo-streamdeck/internal/app/hwinfostreamdeckplugin"
+	plugin "github.com/prolix-oc/hwinfo-streamdeck/internal/app/hwinfostreamdeckplugin"
 )
 
 var port = flag.String("port", "", "The port that should be used to create the WebSocket")
@@ -37,7 +37,7 @@ func main() {
 	// DEBUG LOGGING:
 	//
 	// appdata := os.Getenv("APPDATA")
-	// logpath := filepath.Join(appdata, "Elgato/StreamDeck/Plugins/com.exension.hwinfo.sdPlugin/hwinfo.log")
+	// logpath := filepath.Join(appdata, "Elgato/StreamDeck/Plugins/com.prolix.hwinfo.sdPlugin/hwinfo.log")
 	// f, err := os.OpenFile(logpath, os.O_RDWR|os.O_CREATE, 0666)
 	// if err != nil {
 	// 	log.Fatalf("OpenFile Log: %v", err)

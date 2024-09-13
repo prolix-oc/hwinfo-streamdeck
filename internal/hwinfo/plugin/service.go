@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/shayne/hwinfo-streamdeck/internal/hwinfo"
+	"github.com/prolix-oc/hwinfo-streamdeck/internal/hwinfo"
 )
 
 // Service wraps hwinfo shared mem streaming

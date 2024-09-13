@@ -12,8 +12,8 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/shayne/hwinfo-streamdeck/internal/hwinfo/shmem"
-	"github.com/shayne/hwinfo-streamdeck/internal/hwinfo/util"
+	"github.com/prolix-oc/hwinfo-streamdeck/internal/hwinfo/shmem"
+	"github.com/prolix-oc/hwinfo-streamdeck/internal/hwinfo/util"
 )
 
 // SharedMemory provides access to the HWiNFO shared memory

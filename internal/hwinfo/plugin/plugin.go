@@ -1,8 +1,8 @@
 package plugin
 
 import (
-	"github.com/shayne/hwinfo-streamdeck/internal/hwinfo"
-	hwsensorsservice "github.com/shayne/hwinfo-streamdeck/pkg/service"
+	"github.com/prolix-oc/hwinfo-streamdeck/internal/hwinfo"
+	hwsensorsservice "github.com/prolix-oc/hwinfo-streamdeck/pkg/service"
 )
 
 // Plugin implementation

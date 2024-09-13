@@ -10,9 +10,9 @@ import (
 
 	"github.com/hashicorp/go-plugin"
 	"github.com/shayne/go-winpeg"
-	"github.com/shayne/hwinfo-streamdeck/pkg/graph"
-	hwsensorsservice "github.com/shayne/hwinfo-streamdeck/pkg/service"
-	"github.com/shayne/hwinfo-streamdeck/pkg/streamdeck"
+	"github.com/prolix-oc/hwinfo-streamdeck/pkg/graph"
+	hwsensorsservice "github.com/prolix-oc/hwinfo-streamdeck/pkg/service"
+	"github.com/prolix-oc/hwinfo-streamdeck/pkg/streamdeck"
 )
 
 // Plugin handles information between HWiNFO and Stream Deck
@@ -146,7 +146,7 @@ func (p *Plugin) applyDefaultFormat(v float64, t hwsensorsservice.ReadingType, u
 }
 
 func (p *Plugin) updateTiles(data *actionData) {
-	if data.action != "com.exension.hwinfo.reading" {
+	if data.action != "com.prolix.hwinfo.reading" {
 		log.Printf("Unknown action updateTiles: %s\n", data.action)
 		return
 	}
@@ -160,7 +160,7 @@ func (p *Plugin) updateTiles(data *actionData) {
 	if !p.appLaunched {
 		if !data.settings.InErrorState {
 			payload := evStatus{Error: true, Message: "HWiNFO Unavailable"}
-			err := p.sd.SendToPropertyInspector("com.exension.hwinfo.reading", data.context, payload)
+			err := p.sd.SendToPropertyInspector("com.prolix.hwinfo.reading", data.context, payload)
 			if err != nil {
 				log.Println("updateTiles SendToPropertyInspector", err)
 			}
@@ -183,7 +183,7 @@ func (p *Plugin) updateTiles(data *actionData) {
 	// show ui on property inspector if in error state
 	if data.settings.InErrorState {
 		payload := evStatus{Error: false, Message: "show_ui"}
-		err := p.sd.SendToPropertyInspector("com.exension.hwinfo.reading", data.context, payload)
+		err := p.sd.SendToPropertyInspector("com.prolix.hwinfo.reading", data.context, payload)
 		if err != nil {
 			log.Println("updateTiles SendToPropertyInspector", err)
 		}

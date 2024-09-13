@@ -6,7 +6,7 @@
   "Actions": [
     {
       "Icon": "icon",
-      "Name": "HWiNFO",
+      "Name": "HWiNFO Prolix Ver",
       "States": [
         {
           "Image": "defaultImage",
@@ -18,19 +18,22 @@
       ],
       "SupportedInMultiActions": false,
       "Tooltip": "Display sensor readings from HWiNFO",
-      "UUID": "com.exension.hwinfo.reading"
+      "UUID": "com.prolix.hwinfo.reading"
     }
   ],
-  "Author": "shayne",
+  "Author": "Prolix",
   "CodePathWin": "hwinfo.exe",
   "PropertyInspectorPath": "index_pi.html",
-  "Description": "Display sensor readings from HWiNFO64. This plugin is not affiliated with HWiNFO64, for more information and to download HWiNFO64 visit https://www.hwinfo.com",
+  "Description": "Display sensor readings from HWiNFO64. This plugin is not affiliated with HWiNFO64, for more information and to download HWiNFO64 visit https://www.hwinfo.com. Customized and FIXED by Prolix, since Shayne abandoned it.",
   "Name": "HWiNFO",
   "Icon": "pluginIcon",
-  "URL": "https://github.com/shayne/hwinfo-streamdeck",
+  "URL": "https://github.com/prolix-oc/hwinfo-streamdeck",
   "Version": "2.0.5",
   "ApplicationsToMonitor": {
-    "windows": ["HWiNFO64.EXE", "HWiNFO64.exe"]
+    "windows": [
+      "HWiNFO64.EXE",
+      "HWiNFO64.exe"
+    ]
   },
   "OS": [
     {
